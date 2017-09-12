@@ -125,7 +125,14 @@ console.log(mustBeTrue(true))
  * Console.log your result.
 */
 
+function bigBird(word){
+	if(word.length> 3){
+		return "word to big bird";
+	}
 
+}
+
+console.log(bigBird("donuts"))
 
 /*
  * #6
