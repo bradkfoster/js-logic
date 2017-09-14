@@ -318,6 +318,21 @@ console.log(graduated)
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+	if(speed < 50){
+		return "You are riding Honolulus rail";
+	}
+	else if(speed < 100){
+		return "You are riding an Amtrak";
+	}else{
+		return "Now you ballin in the Shinkansen";
+	}
+
+	
+	
+}
+console.log(moneyTrain(112))
+
 
 /*
  * #14
@@ -332,9 +347,24 @@ console.log(graduated)
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 50;
+var doughnutPrice = 5;
+var doughnutBought = 0;
 
 
+function buyDoughnut(){
+	if(budget >= doughnutPrice){
+	budget -= doughnutPrice;
+	doughnutBought++;
 
+
+	}
+
+}
+
+buyDoughnut();
+console.log(budget)
+console.log(doughnutBought)
 
 
 /*
