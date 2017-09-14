@@ -244,14 +244,14 @@ console.log(dirty30(10,10,11))
 */ 
 
 function evenStevens(num){
-	if(num / 2){
+	if(num % 2 === 0){
 		return true;
 	}else{
 		return false;
 	}
 }
  
- console.log(evenStevens(4));
+ console.log("evenstevens ",evenStevens(4));
 
 
 
@@ -291,7 +291,7 @@ console.log(daClub(22,22))
  * Console.log your result.
 */ 
 function graduation(credits, thesis){
-	if(credits >= 120 && thesis === "finished"){
+	if(credits >= 120 || thesis === "finished"){
 		return "Congratulations on a job well done";
 	}else{
 		return "See you in summer school";
@@ -394,12 +394,20 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var sandwich = ["meat", "lettuce", "tomato", "avocade", "Bread"];
+for(var i = 0; i<sandwich.length; i++){
+console.log("Sandwich is made with " + sandwich[i]);
+
+}
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+  for( var i = 0; i < myFavFoods.length; i++){
+  	console.log(myFavFoods[i])
+  }
 
 
 /*
@@ -418,6 +426,21 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
 
 
+var numArray = [10,10,10,10,10];
+
+function sumItUp(arr){
+	var total = 0
+	for( var i = 0; i<arr.length; i++){	
+      total += arr[i];
+    }
+  return total
+}
+
+
+console.log(sumItUp(numArray))
+
+
+
 
 /*
  * #18
@@ -432,6 +455,30 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = [];
+var west = [];
+
+function allStars(ballers){
+	for(var i = 0; i < ballers.length; i++){
+	console.log(ballers[i])
+		if(i % 2 === 0){
+			east.push(ballers[i]);
+
+		}else{
+			west.push(ballers[i]);
+		}
+	}
+}
+
+allStars(players);
+
+console.log("east array" ,east);
+console.log("west array ",west);
+
+
+
+
+
 /*
  * #19
  * Function - subways
@@ -444,7 +491,8 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+
+  
 
 
 /*
